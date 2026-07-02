@@ -136,6 +136,15 @@
       font-weight: 800;
     }
 
+    .hero-subtitle {
+      max-width: 760px;
+      margin: -6px 0 18px;
+      color: #2d2924;
+      font-size: clamp(1rem, 3.2vw, 1.18rem);
+      line-height: 1.55;
+      font-weight: 800;
+    }
+
     h2 {
       margin-bottom: 14px;
       font-size: clamp(1.55rem, 6vw, 2.65rem);
@@ -436,6 +445,33 @@
 
     .buyer-card h3 {
       margin-bottom: 0;
+    }
+
+    .faq-list {
+      display: grid;
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .faq-item {
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, 0.82);
+      box-shadow: 0 12px 34px rgba(22, 20, 16, 0.045);
+    }
+
+    .faq-item h3 {
+      margin-bottom: 8px;
+      color: var(--ink);
+      font-size: 1.04rem;
+    }
+
+    .faq-item p {
+      margin-bottom: 0;
+      color: #474139;
+      font-size: 0.96rem;
+      line-height: 1.68;
     }
 
     .proof-card {
@@ -831,6 +867,8 @@
     html.a11y-high-contrast .marketing-tool,
     html.a11y-high-contrast .screening-card,
     html.a11y-high-contrast .exclusive-card,
+    html.a11y-high-contrast .buyer-card,
+    html.a11y-high-contrast .faq-item,
     html.a11y-high-contrast .home-testimonial,
     html.a11y-high-contrast .legal-item {
       border-color: #000000;
@@ -839,6 +877,7 @@
     }
 
     html.a11y-high-contrast .section-intro,
+    html.a11y-high-contrast .hero-subtitle,
     html.a11y-high-contrast .accordion-content,
     html.a11y-high-contrast .step p,
     html.a11y-high-contrast .card p,
@@ -847,6 +886,8 @@
     html.a11y-high-contrast .marketing-tool p,
     html.a11y-high-contrast .screening-card p,
     html.a11y-high-contrast .exclusive-card p,
+    html.a11y-high-contrast .buyer-card p,
+    html.a11y-high-contrast .faq-item p,
     html.a11y-high-contrast .home-testimonial p,
     html.a11y-high-contrast .home-testimonial blockquote,
     html.a11y-high-contrast .home-testimonial footer {
@@ -1007,6 +1048,10 @@
 
       .buyer-cards {
         grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .faq-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
       }
 
       .marketing-tools {
